@@ -1,0 +1,6 @@
+---
+- name: Setup Nginx on worker node
+  hosts: worker
+  become: true
+  roles:
+    - my_nginx_role
